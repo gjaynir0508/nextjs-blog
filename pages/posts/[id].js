@@ -36,6 +36,7 @@ export default function Post({ postData }) {
 					<Date dateString={postData.date} />
 				</div>
 				<div
+					role="article"
 					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
 				/>
 			</article>
